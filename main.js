@@ -1,6 +1,6 @@
-$(".container div").on('click', open)
-  var open = function (){
-    if (height == 32)
-    return (height == 400)
-    $(this)
-  }
+var open = function (x){
+  console.log($(x.target));
+  $(x.target).parent().toggleClass("changeh");
+}
+
+$(".container div").on('click', open);
